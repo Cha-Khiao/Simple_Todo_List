@@ -248,6 +248,10 @@ flutter pub get
 flutter run
 ```
 
+## ตัวอย่างหน้าจอ User Interface
+
+![Todo_Ui](./lib/TodoList.png)
+
 ## License
 
 โปรเจกต์นี้ใช้สำหรับการศึกษาเท่านั้น
