@@ -23,7 +23,7 @@ class TodoListScreen extends StatelessWidget {
         title: Row(
           children: [
             Container(
-              padding: const EdgeInsets.all(😎,
+              padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
                 color: Colors.white.withOpacity(0.2),
                 shape: BoxShape.circle,
@@ -151,7 +151,7 @@ class TodoListScreen extends StatelessWidget {
           end: Alignment.centerRight,
           colors: [
             AppConstants.primaryColor,
-            AppConstants.primaryColor.withOpacity(0.😎,
+            AppConstants.primaryColor.withOpacity(0.8),
           ],
         ),
         borderRadius: BorderRadius.circular(24),
@@ -193,7 +193,7 @@ class TodoListScreen extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 😎,
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                 decoration: BoxDecoration(
                   color: Colors.white.withOpacity(0.2),
                   borderRadius: BorderRadius.circular(20),
@@ -241,7 +241,7 @@ class TodoListScreen extends StatelessWidget {
             ),
             child: Icon(icon, color: Colors.white, size: 24),
           ),
-          const SizedBox(height: 😎,
+          const SizedBox(height: 8),
           Text(
             count.toString(),
             style: GoogleFonts.poppins(
@@ -293,7 +293,7 @@ class TodoListScreen extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: 😎,
+          const SizedBox(height: 8),
           Container(
             height: 8,
             decoration: BoxDecoration(
@@ -377,15 +377,15 @@ class TodoListScreen extends StatelessWidget {
                 _buildFilterChip('ทั้งหมด', todoProvider.filterStatus == 'all', () {
                   todoProvider.setFilterStatus('all');
                 }, Icons.list),
-                const SizedBox(width: 😎,
+                const SizedBox(width: 8),
                 _buildFilterChip('ยังไม่เสร็จ', todoProvider.filterStatus == 'active', () {
                   todoProvider.setFilterStatus('active');
                 }, Icons.radio_button_unchecked),
-                const SizedBox(width: 😎,
+                const SizedBox(width: 8),
                 _buildFilterChip('เสร็จแล้ว', todoProvider.filterStatus == 'completed', () {
                   todoProvider.setFilterStatus('completed');
                 }, Icons.check_circle),
-                const SizedBox(width: 😎,
+                const SizedBox(width: 8),
                 if (todoProvider.completedTodos > 0)
                   _buildFilterChip('ล้างเสร็จแล้ว', false, () {
                     _showClearCompletedDialog(context, todoProvider);
@@ -409,7 +409,7 @@ class TodoListScreen extends StatelessWidget {
           onTap: onTap,
           borderRadius: BorderRadius.circular(20),
           child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 😎,
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
             decoration: BoxDecoration(
               color: isSelected 
                   ? (isDanger ? AppConstants.errorColor : AppConstants.primaryColor)
@@ -473,7 +473,7 @@ class TodoListScreen extends StatelessWidget {
                 color: Colors.black87,
               ),
             ),
-            const SizedBox(height: 😎,
+            const SizedBox(height: 8),
             Text(
               'กดปุ่ม + เพื่อเพิ่มรายการใหม่',
               style: GoogleFonts.poppins(
@@ -580,7 +580,7 @@ class TodoListScreen extends StatelessWidget {
             ),
             subtitle: todo.reminderDateTime != null
                 ? Padding(
-                    padding: const EdgeInsets.only(top: 😎,
+                    padding: const EdgeInsets.only(top: 8),
                     child: Container(
                       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
@@ -591,7 +591,7 @@ class TodoListScreen extends StatelessWidget {
                                 : isDueSoon 
                                     ? AppConstants.accentColor.withOpacity(0.1)
                                     : app_date_utils.DateUtils.getDueDateColor(todo.reminderDateTime).withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(😎,
+                        borderRadius: BorderRadius.circular(8),
                         border: Border.all(
                           color: isOverdue 
                               ? AppConstants.errorColor.withOpacity(0.3)
@@ -668,7 +668,7 @@ class TodoListScreen extends StatelessWidget {
                         color: Colors.grey.withOpacity(0.5),
                         size: 18,
                       ),
-                const SizedBox(width: 😎,
+                const SizedBox(width: 8),
                 PopupMenuButton<String>(
                   onSelected: (value) {
                     if (value == 'edit') {
@@ -868,7 +868,7 @@ class TodoListScreen extends StatelessWidget {
               backgroundColor: AppConstants.errorColor,
               foregroundColor: Colors.white,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(😎,
+                borderRadius: BorderRadius.circular(8),
               ),
             ),
             child: Text(
@@ -920,7 +920,7 @@ class TodoListScreen extends StatelessWidget {
               backgroundColor: AppConstants.errorColor,
               foregroundColor: Colors.white,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(😎,
+                borderRadius: BorderRadius.circular(8),
               ),
             ),
             child: Text(
