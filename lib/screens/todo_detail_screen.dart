@@ -107,7 +107,7 @@ class _TodoDetailScreenState extends State<TodoDetailScreen> {
                   fontWeight: FontWeight.w600,
                 ),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(😎,
+                  borderRadius: BorderRadius.circular(8),
                 ),
               ),
             ),
@@ -171,7 +171,7 @@ class _TodoDetailScreenState extends State<TodoDetailScreen> {
                   fontWeight: FontWeight.w600,
                 ),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(😎,
+                  borderRadius: BorderRadius.circular(8),
                 ),
               ),
             ),
@@ -406,7 +406,7 @@ class _TodoDetailScreenState extends State<TodoDetailScreen> {
               Icons.color_lens,
               color: AppConstants.primaryColor,
             ),
-            const SizedBox(width: 😎,
+            const SizedBox(width: 8),
             Text(
               'สี',
               style: GoogleFonts.poppins(
@@ -469,7 +469,7 @@ class _TodoDetailScreenState extends State<TodoDetailScreen> {
               Icons.event,
               color: AppConstants.primaryColor,
             ),
-            const SizedBox(width: 😎,
+            const SizedBox(width: 8),
             Text(
               'วันครบกำหนด',
               style: GoogleFonts.poppins(
@@ -532,13 +532,13 @@ class _TodoDetailScreenState extends State<TodoDetailScreen> {
             ),
           ),
         ),
-        const SizedBox(height: 😎,
+        const SizedBox(height: 8),
         if (_dueDateTime != null)
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
               color: AppConstants.primaryColor.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(😎,
+              borderRadius: BorderRadius.circular(8),
               border: Border.all(
                 color: AppConstants.primaryColor.withOpacity(0.3),
               ),
@@ -550,7 +550,7 @@ class _TodoDetailScreenState extends State<TodoDetailScreen> {
                   color: AppConstants.primaryColor,
                   size: 20,
                 ),
-                const SizedBox(width: 😎,
+                const SizedBox(width: 8),
                 Expanded(
                   child: Text(
                     'กำหนดให้เสร็จภายในวันที่ ${app_date_utils.DateUtils.formatThaiDateFull(_dueDateTime!)}',
@@ -578,7 +578,7 @@ class _TodoDetailScreenState extends State<TodoDetailScreen> {
               Icons.push_pin,
               color: AppConstants.primaryColor,
             ),
-            const SizedBox(width: 😎,
+            const SizedBox(width: 8),
             Text(
               'การปักหมุด',
               style: GoogleFonts.poppins(
@@ -653,7 +653,7 @@ class _TodoDetailScreenState extends State<TodoDetailScreen> {
               Icons.color_lens,
               color: AppConstants.primaryColor,
             ),
-            const SizedBox(width: 😎,
+            const SizedBox(width: 8),
             Text(
               'สี',
               style: GoogleFonts.poppins(
@@ -698,7 +698,7 @@ class _TodoDetailScreenState extends State<TodoDetailScreen> {
               Icons.event,
               color: AppConstants.primaryColor,
             ),
-            const SizedBox(width: 😎,
+            const SizedBox(width: 8),
             Text(
               'วันครบกำหนด',
               style: GoogleFonts.poppins(
@@ -742,13 +742,13 @@ class _TodoDetailScreenState extends State<TodoDetailScreen> {
             ],
           ),
         ),
-        const SizedBox(height: 😎,
+        const SizedBox(height: 8),
         if (_dueDateTime != null)
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
               color: AppConstants.primaryColor.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(😎,
+              borderRadius: BorderRadius.circular(8),
               border: Border.all(
                 color: AppConstants.primaryColor.withOpacity(0.3),
               ),
@@ -760,7 +760,7 @@ class _TodoDetailScreenState extends State<TodoDetailScreen> {
                   color: AppConstants.primaryColor,
                   size: 20,
                 ),
-                const SizedBox(width: 😎,
+                const SizedBox(width: 8),
                 Expanded(
                   child: Text(
                     'กำหนดให้เสร็จภายในวันที่ ${app_date_utils.DateUtils.formatThaiDateFull(_dueDateTime!)}',
